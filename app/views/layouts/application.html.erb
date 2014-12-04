@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>NgtSrl</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>NgtSrl</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
 
-<%= yield %>
+	<body>
+		<%= link_to 'Home', root_path%>
+		<%= link_to 'Azienda', azienda_path%>
+		<%= link_to 'Prodotti', prodotti_path%>
+		<%= link_to 'News ed Eventi', news_path%>
+		<%= link_to 'Contatti', contatti_path%>
+		<%= yield %>
 
-</body>
+	</body>
 </html>
